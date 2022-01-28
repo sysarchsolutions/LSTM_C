@@ -88,7 +88,7 @@ int* get_test_prediction(double **train, double **test, double l_rate, int n_epo
             double **h_vector = (double **)malloc((cell_num+1)*sizeof(double *));     
             double y_delta[cell_num];    //保存误差关于输出层的偏导
 	  
-	        for(j=0;j<cell_num;j++){
+	    for(j=0;j<cell_num;j++){
                 M_vector[j] = (double *)malloc(hidenode*sizeof(double));
                 h_vector[j] = (double *)malloc(hidenode*sizeof(double));
                 I_vector[j] = (double *)malloc(hidenode*sizeof(double));
