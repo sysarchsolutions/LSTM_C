@@ -112,7 +112,7 @@ int* get_test_prediction(double **train, double **test, double l_rate, int n_epo
                 h_vector[0][j] = 0;
             }
 		 
-		    double a_int = train[i][0];
+            double a_int = train[i][0];
             int a[cell_num];
             double b_int = train[i][1];
             int b[cell_num];
@@ -136,7 +136,7 @@ int* get_test_prediction(double **train, double **test, double l_rate, int n_epo
                 double *h_pre = h_vector[p];
                 double *memory_pre = M_vector[p];
 			 
-		        for(k=0; k<hidenode; k++)
+		for(k=0; k<hidenode; k++)
                 {   
                     //输入层转播到隐层
                     double inGate = 0.0;
